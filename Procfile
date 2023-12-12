@@ -1,1 +1,1 @@
-worker: python3 botku.py
+python3 botku.py
