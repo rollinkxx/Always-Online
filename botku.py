@@ -20,7 +20,6 @@ async def private_message(event):
     if event.is_private:
         username = (await event.get_sender()).first_name
         waktu = datetime.now().strftime("%H:%M:%S")
-        new_line = "/n"
         durasi = 60
         async with client.action(event.chat_id, 'typing'):
             logger.info(f">>> ({waktu}) Chat baru dari {username}")
